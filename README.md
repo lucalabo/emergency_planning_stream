@@ -34,14 +34,14 @@ Both variants share the same runtime infrastructure (MongoDB, DPSR engine, `stre
 ┌─────────────────────────────────────────────────────────────┐
 │                        GARDENER SYSTEM                       │
 │                                                              │
-│  ┌──────────────────┐    MongoDB (ReplicaSet)    ┌────────┐ │
-│  │  stream_gardener  │ ──── input_stream ──────► │  DPSR  │ │
-│  │    (Python Sim)   │ ◄─── output_stream ─────  │ Engine │ │
-│  └──────────────────┘                            └────────┘ │
+│  ┌──────────────────┐    MongoDB (ReplicaSet)    ┌────────┐  │
+│  │  stream_gardener │ ──── input_stream ──────►  │  DPSR  │  │
+│  │    (Python Sim)  │                            │ Engine │  │
+│  └──────────────────┘                            └────────┘  │
 │           │                                                  │
-│    log_results/                                             │
-│    saved_simulations/                                       │
-└─────────────────────────────────────────────────────────────┘
+│    log_results/                                              │
+│    saved_simulations/                                        │
+└───────────────────────────────────────────────────────────── ┘
 ```
 
 The system is made up of three main components:
@@ -52,7 +52,7 @@ The system is made up of three main components:
 | **Reasoner** | `DP-sr-v1.0.0.jar` (DPSR engine) | Reads state from MongoDB, runs ASP reasoning, writes actions back |
 | **Shared Bus** | MongoDB `gardener_db` | Decoupled communication via `input_stream` / `output_stream` collections |
 
-The simulator sends the full environment state (player, target, walls, frogs, plants) on first tick, then only dynamic data (frogs, plants) on subsequent ticks. The reasoner consumes this stream, computes the best action via ASP, and writes it back — closing the control loop.
+The simulator sends the full environment state (player, target, walls, frogs, plants) on first tick, then only dynamic data (frogs, plants) on subsequent ticks. The reasoner consumes this stream and computes the best action via ASP.
 
 ---
 
@@ -241,7 +241,7 @@ python3 stream_gardener.py instances/big-nd-200-001.lp \
   --size 200 \
   --horizon 6 \
   --radius 3 \
-  --tick_rate 10000
+  --tick_rate 1000
 ```
 
 ### 5.3 — Stopping a Run

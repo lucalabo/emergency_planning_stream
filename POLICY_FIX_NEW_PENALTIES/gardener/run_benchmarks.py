@@ -22,7 +22,7 @@ HORIZONS = [2, 4, 6]
 REPETITIONS = 10
 MAX_STEPS = 300
 INITIALIZATION_DELAY = 20 # seconds
-TICK_RATE = 8000
+TICK_RATE = 5000
 
 def run_single_benchmark(radius, horizon, run_id):
     """Runs a single benchmark instance and returns the metrics."""

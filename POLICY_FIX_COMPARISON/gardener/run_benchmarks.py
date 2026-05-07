@@ -26,7 +26,7 @@ COMBINATIONS = [
 REPETITIONS = 10
 MAX_STEPS = 400
 INITIALIZATION_DELAY = 20 # seconds
-TICK_RATE = 10000
+TICK_RATE = 5000
 
 def run_single_benchmark(radius, horizon, run_id):
     """Runs a single benchmark instance and returns the metrics."""
