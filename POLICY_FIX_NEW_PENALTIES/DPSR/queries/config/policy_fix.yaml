@@ -1,0 +1,261 @@
+copy_existing: "true"
+sources:
+  - ip: "localhost"
+    port: "27017"
+    databases:
+      - name: "gardener_db"
+        collections:
+          - name: "input_stream"
+            schema:
+              - key: "_id"
+                type: "string"
+              - key: "timestamp"
+                type: "string"
+              - key: "size"
+                type: "list"
+                item_schema:
+                  - key: "S"
+                    type: "string"
+              - key: "horizon"
+                type: "list"
+                item_schema:
+                  - key: "H"
+                    type: "string"
+              - key: "step"
+                type: "list"
+                item_schema:
+                  - key: "S"
+                    type: "string"
+              - key: "num_frogs"
+                type: "list"
+                item_schema:
+                  - key: "F"
+                    type: "string"
+              - key: "num_plants"
+                type: "list"
+                item_schema:
+                  - key: "P"
+                    type: "string"
+              - key: "radius"
+                type: "list"
+                item_schema:
+                  - key: "R"
+                    type: "string"
+              - key: "target"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"
+              - key: "start_position_player"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"
+                  - key: "T"
+                    type: "string"
+              - key: "fcol"
+                type: "list"
+                item_schema:
+                  - key: "F"
+                    type: "string"
+                  - key: "C"
+                    type: "string"
+                  - key: "H"
+                    type: "string"
+              - key: "frow"
+                type: "list"
+                item_schema:
+                  - key: "F"
+                    type: "string"
+                  - key: "R"
+                    type: "string"
+                  - key: "H"
+                    type: "string"  
+              - key: "wall"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"                                   
+              - key: "plant"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string" 
+              - key: "mud"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"  
+              - key: "water"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"  
+              - key: "oil"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"  
+              - key: "fire"
+                type: "list"
+                item_schema:
+                  - key: "C"
+                    type: "string"
+                  - key: "R"
+                    type: "string"                    
+            event_time:
+              field: "timestamp"
+              format: "datetime"
+            predicates:
+              - name: "horizon"
+                terms:                
+                  - field: "horizon"
+                    index: -1
+                    fields:
+                      - field: "H"
+                        asp_type: "integer" 
+              - name: "size"
+                terms:                
+                  - field: "size"
+                    index: -1
+                    fields:
+                      - field: "S"
+                        asp_type: "integer" 
+              - name: "step"
+                terms:                
+                  - field: "step"
+                    index: -1
+                    fields:
+                      - field: "S"
+                        asp_type: "integer" 
+              - name: "num_frogs"
+                terms:                
+                  - field: "num_frogs"
+                    index: -1
+                    fields:
+                      - field: "F"
+                        asp_type: "integer" 
+              - name: "num_plants"
+                terms:                
+                  - field: "num_plants"
+                    index: -1
+                    fields:
+                      - field: "P"
+                        asp_type: "integer" 
+              - name: "radius"
+                terms:                
+                  - field: "radius"
+                    index: -1
+                    fields:
+                      - field: "R"
+                        asp_type: "integer" 
+              - name: "target"
+                terms:                
+                  - field: "target"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"    
+              - name: "fcol"
+                terms:                
+                  - field: "fcol"
+                    index: -1
+                    fields:
+                      - field: "F"
+                        asp_type: "integer"  
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "H"
+                        asp_type: "integer"  
+              - name: "frow"
+                terms:                
+                  - field: "frow"
+                    index: -1
+                    fields:
+                      - field: "F"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"  
+                      - field: "H"
+                        asp_type: "integer"   
+              - name: "wall"
+                terms:                
+                  - field: "wall"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"    
+              - name: "plant"
+                terms:                
+                  - field: "plant"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"  
+              - name: "start_position_player"
+                terms:                
+                  - field: "start_position_player"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"
+                      - field: "T"
+                        asp_type: "integer"
+              - name: "mud"
+                terms:                
+                  - field: "mud"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"  
+              - name: "water"
+                terms:                
+                  - field: "water"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"  
+              - name: "oil"
+                terms:                
+                  - field: "oil"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"  
+              - name: "fire"
+                terms:                
+                  - field: "fire"
+                    index: -1
+                    fields:
+                      - field: "C"
+                        asp_type: "integer"  
+                      - field: "R"
+                        asp_type: "integer"                                      

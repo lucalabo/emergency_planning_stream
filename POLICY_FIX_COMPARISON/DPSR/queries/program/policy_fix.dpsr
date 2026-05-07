@@ -1,0 +1,276 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 1. INITIALIZATION & CONSTANTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+pcol(C,@now) :- start_position_player(C,_,0).
+prow(R,@now) :- start_position_player(_,R,0).
+
+action_radius(R) :- radius(R).
+my_horizon(H)    :- horizon(H).
+
+% Frog positions at @now from input stream
+fcol_now(F,C) :- fcol(F,C,0).
+frow_now(F,R) :- frow(F,R,0).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 2. TIME HORIZON MANAGEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+new_horizon_new(@now) :- my_horizon(H), H >= 1.
+new_horizon_new(T+1)  :- new_horizon_new(T), my_horizon(H), T < @now+H.
+
+% Future time points where we evaluate risk (T > @now)
+frog_step(T) :- new_horizon_new(T), my_horizon(H), T > @now, T < @now+H, not reached.
+
+% Player planning steps: T = @now .. @now+H-2 (so we can produce T+1)
+plan_step(T) :- my_horizon(H), new_horizon_new(T), T >= @now, T < (@now+H)-1.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 3. PLANNING ACTIVATION LOGIC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+has_future_moves  :- p(_,_,T) in {1}, T > @now.
+activate_planning :- not has_future_moves.
+activate_planning :- active_frog(_).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 4. PLAYER MOVEMENT & ACTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+p(R,C,T) :- T=@now, prow(R,T), pcol(C,T) in [1].
+p(R,C,T) :- T=@now, p(R,C,T) in [1].
+p(R,C,T) :- p(R,C,T) in [1], T > @now, not activate_planning.
+
+% At least one move per step when planning
+n(T) | s(T) | e(T) | w(T) :- plan_step(T), activate_planning, not reached.
+
+% At most one move per step (pairwise exclusion)
+:- plan_step(T), n(T), s(T).
+:- plan_step(T), n(T), e(T).
+:- plan_step(T), n(T), w(T).
+:- plan_step(T), s(T), e(T).
+:- plan_step(T), s(T), w(T).
+:- plan_step(T), e(T), w(T).
+
+% Apply moves: move at time T produces position at time T+1
+p(R-1,C,T+1) :- p(R,C,T), n(T), activate_planning.
+p(R+1,C,T+1) :- p(R,C,T), s(T), activate_planning.
+p(R,C-1,T+1) :- p(R,C,T), w(T), activate_planning.
+p(R,C+1,T+1) :- p(R,C,T), e(T), activate_planning.
+
+% Uniqueness: one player position per time
+:- p(R,C,T), p(R1,C1,T), R != R1.
+:- p(R,C,T), p(R1,C1,T), C != C1.
+
+% --- Map Constraints ---
+:- p(_,C,_), C < 0.
+:- p(_,C,_), C > S, size(S).
+:- p(R,_,_), R < 0.
+:- p(R,_,_), R > S, size(S).
+:- p(R,C,_), wall(C,R).
+
+
+
+
+% External actions for the policy activated
+action(A,S,COL,ROW) :-
+    p(R,C,@now),
+    action_radius(Rad),
+    &generate_nearby_actions(C,R,Rad;A,S,COL,ROW),
+    activate_planning.
+    
+
+    
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 5. ACTIVE FROGS (risk-aware selection)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+diff_row_abs(F, AbsR) :-
+    frow_now(F, FR), p(PR, PC, @now),
+    FR >= PR, AbsR = FR - PR.
+diff_row_abs(F, AbsR) :-
+    frow_now(F, FR), p(PR, PC, @now),
+    FR < PR,  AbsR = PR - FR.
+
+diff_col_abs(F, AbsC) :-
+    fcol_now(F, FC), p(PR, PC, @now),
+    FC >= PC, AbsC = FC - PC.
+diff_col_abs(F, AbsC) :-
+    fcol_now(F, FC), p(PR, PC, @now),
+    FC < PC,  AbsC = PC - FC.
+
+
+active_frog(F) :-
+    diff_row_abs(F, DR), diff_col_abs(F, DC),
+    action_radius(R), my_horizon(H),
+    TotalDist = DR + DC,
+    TotalDist <= R ,
+    not frogKilled(F) in {1}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 6. RISK COLLISION (over-approx, no explicit frog moves)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% possibili posizioni rana (solo per rane attive, dentro l'orizzonte)
+fpos(F,R,C,@now) :- active_frog(F), frow_now(F,R), fcol_now(F,C).
+
+% north/south/east/west (usa size(S) per bounds e wall(C,R) per ostacoli)
+fpos(F,R1,C,T) :-
+  fpos(F,R,C,T-1), frog_step(T),
+  R1 = R-1, size(S), R1 >= 0, R1 <= S, not wall(C,R1).
+
+fpos(F,R1,C,T) :-
+  fpos(F,R,C,T-1), frog_step(T),
+  R1 = R+1, size(S), R1 >= 0, R1 <= S, not wall(C,R1).
+
+fpos(F,R,C1,T) :-
+  fpos(F,R,C,T-1), frog_step(T),
+  C1 = C-1, size(S), C1 >= 0, C1 <= S, not wall(C1,R).
+
+fpos(F,R,C1,T) :-
+  fpos(F,R,C,T-1), frog_step(T),
+  C1 = C+1, size(S), C1 >= 0, C1 <= S, not wall(C1,R).
+
+% rischio: esiste un percorso della rana fino alla cella del player
+risk_collide(T,F) :-
+  active_frog(F), frog_step(T),
+  p(R,C,T), fpos(F,R,C,T).
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 7. SAT/OK (risk-based)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ok(@now).
+ok(@now,F) :- active_frog(F).
+
+% Choice, but forced to bad when risk exists
+good(T,F) | bad(T,F) :- active_frog(F), frog_step(T).
+
+:- active_frog(F), frog_step(T), risk_collide(T,F), not bad(T,F).
+
+% A frog is ok if there is no risk at T and ok(T-1), or if we mark bad
+ok(T,F) :- active_frog(F), frog_step(T), not risk_collide(T,F), ok(T-1).
+ok(T,F) :- active_frog(F), frog_step(T), bad(T,F).
+
+not_all_ok(T) :- active_frog(F), frog_step(T), not ok(T,F).
+ok(T) :- frog_step(T), ok(T-1), not not_all_ok(T).
+
+last_step(L) :- my_horizon(H), L = (@now+H)-1.
+sat :- last_step(L), ok(L).
+sat :- reached.
+
+:- not sat.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 8. GAME STATE & INTERACTION STATUS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+reached :- target(C,R), p(R,C,@now).
+reached :- reached in {1}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 9. OPTIMIZATION (WEAK CONSTRAINTS)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+positionPlayer(C,R) :- p(R,C,@now).
+
+multi(M) :- positionPlayer(C,R), positionPlayer(C,R) count M in [20].
+is_multi :- multi(_).
+
+action_taken(1, T, C, R) :- p(R,C,T), p(R-1,C,T+1).
+action_taken(0, T, C, R) :- p(R,C,T), p(R+1,C,T+1).
+action_taken(2, T, C, R) :- p(R,C,T), p(R,C-1,T+1).
+action_taken(3, T, C, R) :- p(R,C,T), p(R,C+1,T+1).
+
+% --- 1. Frog Penalty (risk-based via bad/2) ---
+penalty_frog(P,F,T) :-
+    bad(T,F),
+    T1 = T-@now,
+    my_horizon(H),
+    P = (H-T1)*5.
+:~ penalty_frog(P,F,T). [P@1,F,T]
+
+% --- 2. Plant Penalty ---
+bad_plant(T, C, R) :- p(R,C,T), plant(C,R), not plantKilled(C,R) in {1}.
+penalty_plant(Peso,T,C,R) :-
+    bad_plant(T, C, R),
+    my_horizon(H),
+    T1 = T-@now,
+    Peso = (H-T1)*10.
+    
+:~ penalty_plant(Peso,T,C,R). [Peso@1,T,C,R]
+
+:~p(R,C,T),p(R,C,T1),T!=T1,multi(M),Peso=M*10. [Peso@1]
+
+% --- 4. Action inefficiency ---
+penalty_action(S1, T) :-
+    my_horizon(H),
+    action_taken(A,T,C,R),
+    action(A,B,C,R),
+    multi(M),
+    RankDiff = (3 - B),
+    T1 = T - @now,
+    S = (H - T1),
+    S1 = S*RankDiff*M.
+
+
+penalty_action(S1, T) :-
+    my_horizon(H),
+    action_taken(A,T,C,R),
+    action(A,B,C,R),
+    not is_multi,
+    RankDiff = (3 - B),
+    T1 = T - @now,
+    S = (H - T1),
+    S1 = S * RankDiff.
+
+:~ penalty_action(S,T). [S@1,T]
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 10. HELPERS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+on_frog(F):-frow_now(F,R), fcol_now(F,C), p(R,C,@now).
+#generate(frogKilled(F);on_frog(F)).
+
+
+%plantKilled(C,R) :- plant(C,R), p(R,C,@now).
+%plantKilled(C,R) :- plantKilled(C,R) in {1}.
+on_plant(C,R):- plant(C,R), p(R,C,@now).
+#generate(plantKilled(C,R);on_plant(C,R)).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 11. OUTPUT INTERFACE
+
+#show reached/0.
+#show num_frogs/1.
+#show num_plants/1.
+#show frogKilled/1.
+#show plantKilled/2.
+#show positionPlayer/2.
+#show multi/1.
+#show step/1.
+#show activate_planning/0.
+
+
+
+

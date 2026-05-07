@@ -1,0 +1,8 @@
+usage: ./sender.py <sleep(s)> <n_time_points_tosend> <path/to/log_file> <port_number>
+
+example: ./sender.py 0 2000 logfile.log 9000
+	sends 2000 time points contained in logfile.log at once (used port: 9000)
+
+example2: ./sender.py 0.3 50 logfile.log 9000
+	sends 50 time points contained in logfile.log (used port: 9000)
+	sends one time point every 0.3 seconds.

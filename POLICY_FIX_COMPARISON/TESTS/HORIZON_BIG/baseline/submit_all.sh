@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+cd ~/PycharmProjects/aspframework/gardener/bench_gardener_luca
+bench_jid=$(sbatch --parsable batch_job.slurm)
+echo "Submitted benchmark job ${bench_jid}"
+postprocess_jid=$(sbatch --parsable --dependency=afterany:${bench_jid} postprocess_results.slurm)
+echo "Submitted postprocess job ${postprocess_jid}"
+compress_jid=$(sbatch --parsable --dependency=afterany:${postprocess_jid} compress_results.slurm)
+echo "Submitted results compression job ${compress_jid}"
