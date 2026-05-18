@@ -13,12 +13,15 @@ from analyze_dpsr_log import parse_dpsr_log
 DPSR_DIR = "../DPSR"
 SIM_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_RESULTS_DIR = os.path.join(SIM_DIR, "log_results")
-INSTANCE_PATH = "instances/big-nd-150-001.lp"
+INSTANCE_PATH = "instances/small-nd-100-001.lp"
 
 # Benchmark parameters
-GRID_SIZE = 150
-RADII = [5, 3]
-HORIZONS = [2, 4, 6]
+GRID_SIZE = 100
+COMBINATIONS = [
+    (3, 4), # radius=3, horizon=4
+    (5, 4), 
+    (5, 6),   # radius=5, horizon=6
+]
 REPETITIONS = 10
 MAX_STEPS = 300
 INITIALIZATION_DELAY = 20 # seconds
@@ -42,6 +45,30 @@ def run_single_benchmark(radius, horizon, run_id):
         MongoUtils().clear_collections()
     except Exception as e:
         print(f"[!] Warning: Failed to clear MongoDB: {e}")
+
+
+
+    # 2. Start initialization delay
+    print(f"[*] Waiting {INITIALIZATION_DELAY}s for initialization...")
+    time.sleep(INITIALIZATION_DELAY)
+
+    # 3. Start Generator
+    gen_cmd = [
+        "python3", "stream_gardener.py",
+        INSTANCE_PATH,
+        "--horizon", str(horizon),
+        "--radius", str(radius),
+        "--size", str(GRID_SIZE),
+        "--tick_rate", str(TICK_RATE)
+    ]
+    print(f"[*] Starting Generator: {' '.join(gen_cmd)}")
+    proc_gen = subprocess.Popen(
+        gen_cmd,
+        cwd=SIM_DIR,
+        preexec_fn=os.setsid
+    )
+    print(f"[*] Starting DPSR: {' '.join(gen_cmd)}, waiting 5sec..")
+    time.sleep(5)
 
     # 1. Start DPSR
     dpsr_cmd = [
@@ -92,25 +119,6 @@ def run_single_benchmark(radius, horizon, run_id):
     monitor_thread = threading.Thread(target=monitor_and_tee, daemon=True)
     monitor_thread.start()
 
-    # 2. Start initialization delay
-    print(f"[*] Waiting {INITIALIZATION_DELAY}s for initialization...")
-    time.sleep(INITIALIZATION_DELAY)
-
-    # 3. Start Generator
-    gen_cmd = [
-        "python3", "stream_gardener.py",
-        INSTANCE_PATH,
-        "--horizon", str(horizon),
-        "--radius", str(radius),
-        "--size", str(GRID_SIZE),
-        "--tick_rate", str(TICK_RATE)
-    ]
-    print(f"[*] Starting Generator: {' '.join(gen_cmd)}")
-    proc_gen = subprocess.Popen(
-        gen_cmd,
-        cwd=SIM_DIR,
-        preexec_fn=os.setsid
-    )
 
     # 4. Monitor steps
     try:
@@ -173,29 +181,28 @@ if __name__ == "__main__":
     start_time = time.time()
     results = {}
 
-    for radius in RADII:
-        for horizon in HORIZONS:
-            conf_key = f"R={radius}, H={horizon}"
-            print(f"\n" + "="*80)
-            print(f"CONFIG: {conf_key}")
-            print("="*80)
-            
-            conf_metrics = []
-            for run in range(1, REPETITIONS + 1):
-                try:
-                    m = run_single_benchmark(radius, horizon, run)
-                    if m:
-                        conf_metrics.append(m)
-                except Exception as e:
-                    print(f"[!] Error in run {run}: {e}")
-            
-            if conf_metrics:
-                averages = calculate_averages(conf_metrics)
-                results[conf_key] = averages
-                print(f"\n>>> AVERAGES for {conf_key}:")
-                for k, v in averages.items():
-                    print(f"  {k}: {v:.4f}")
-            else:
+    for radius, horizon in COMBINATIONS:
+        conf_key = f"R={radius}, H={horizon}"
+        print(f"\n" + "="*80)
+        print(f"CONFIG: {conf_key}")
+        print("="*80)
+        
+        conf_metrics = []
+        for run in range(1, REPETITIONS + 1):
+            try:
+                m = run_single_benchmark(radius, horizon, run)
+                if m:
+                    conf_metrics.append(m)
+            except Exception as e:
+                print(f"[!] Error in run {run}: {e}")
+        
+        if conf_metrics:
+            averages = calculate_averages(conf_metrics)
+            results[conf_key] = averages
+            print(f"\n>>> AVERAGES for {conf_key}:")
+            for k, v in averages.items():
+                print(f"  {k}: {v:.4f}")
+        else:
                 print(f"[!] No metrics collected for {conf_key}")
 
     print("\n" + "#"*80)

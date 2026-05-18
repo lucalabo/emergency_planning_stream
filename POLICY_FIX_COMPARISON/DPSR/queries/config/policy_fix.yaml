@@ -74,20 +74,6 @@ sources:
                   - key: "R"
                     type: "string"
                   - key: "H"
-                    type: "string"  
-              - key: "wall"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string"                                   
-              - key: "plant"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
                     type: "string"                    
             event_time:
               field: "timestamp"
@@ -166,24 +152,6 @@ sources:
                         asp_type: "integer"  
                       - field: "H"
                         asp_type: "integer"   
-              - name: "wall"
-                terms:                
-                  - field: "wall"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"    
-              - name: "plant"
-                terms:                
-                  - field: "plant"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"  
               - name: "start_position_player"
                 terms:                
                   - field: "start_position_player"

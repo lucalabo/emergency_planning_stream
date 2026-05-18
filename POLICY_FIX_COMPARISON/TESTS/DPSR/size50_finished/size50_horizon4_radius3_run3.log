@@ -1,0 +1,931 @@
+ANTLR Tool version 4.13.2 used for code generation does not match the current runtime version 4.10.1
+ANTLR Tool version 4.13.2 used for code generation does not match the current runtime version 4.10.1
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/home/lucalabo/Scrivania/DLVSR/POLICY_FIX/emergency-planning-main/POLICY_FIX_COMPARISON_TEST/DPSR/DP-sr-v1.0.0.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+1778685791248 Received input for time point: datetime> 2026-05-13T17:22:48 ms> 1778692968000
+1778685791453	DLV2	0	2026-05-13T17:22:48	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,045289
+1778685791665	0	1778692968	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,000421
+1778685791667	0	1778692968	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,000330
+1778685791678	0	1778692968	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,000290
+1778685791679	0	1778692968	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,000314
+1778685791680	0	1778692968	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,000243
+1778685791682	0	1778692968	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,001230
+1778685791695	0	1778692968	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,000386
+1778685791696	0	1778692968	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,000191
+1778685791698	0	1778692968	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001731
+1778685791887	DLV2	0	1778692968	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,186952
+ANSWER> 1778685792145 Produced output for time point: (datetime) 2026-05-13T17:22:48 (ms) 1778692968000
+2026-05-13T17:22:48	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(16,39), step(0)]
+1778685795017 Received input for time point: datetime> 2026-05-13T17:22:49 ms> 1778692969000
+1778685795261	DLV2	1	2026-05-13T17:22:49	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,043869
+1778685795494	0	1778692969	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003275
+1778685795499	0	1778692969	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002591
+1778685795503	0	1778692969	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002648
+1778685795509	0	1778692969	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003616
+1778685795515	0	1778692969	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003569
+1778685795538	0	1778692969	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,020946
+1778685795541	0	1778692969	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002357
+1778685795544	0	1778692969	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,001527
+1778685795547	0	1778692969	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002305
+1778685795725	DLV2	0	1778692969	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,176446
+ANSWER> 1778685795939 Produced output for time point: (datetime) 2026-05-13T17:22:49 (ms) 1778692969000
+2026-05-13T17:22:49	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(17,39), step(1)]
+1778685800000 Received input for time point: datetime> 2026-05-13T17:22:50 ms> 1778692970000
+1778685800227	DLV2	0	2026-05-13T17:22:50	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,010146
+1778685800359	0	1778692970	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002447
+1778685800362	0	1778692970	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001876
+1778685800365	0	1778692970	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002041
+1778685800368	0	1778692970	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002305
+1778685800371	0	1778692970	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002452
+1778685800374	0	1778692970	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,002777
+1778685800376	0	1778692970	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,001848
+1778685800379	0	1778692970	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,001990
+1778685800381	0	1778692970	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001908
+1778685800526	DLV2	0	1778692970	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,143274
+ANSWER> 1778685800745 Produced output for time point: (datetime) 2026-05-13T17:22:50 (ms) 1778692970000
+2026-05-13T17:22:50	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(18,39), step(2)]
+1778685804992 Received input for time point: datetime> 2026-05-13T17:22:51 ms> 1778692971000
+1778685805233	DLV2	1	2026-05-13T17:22:51	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,010206
+1778685805364	0	1778692971	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002583
+1778685805366	0	1778692971	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001927
+1778685805372	0	1778692971	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002938
+1778685805376	0	1778692971	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003085
+1778685805380	0	1778692971	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002718
+1778685805384	0	1778692971	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004479
+1778685805386	0	1778692971	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,001634
+1778685805389	0	1778692971	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,001988
+1778685805391	0	1778692971	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001610
+1778685805509	DLV2	0	1778692971	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,117830
+ANSWER> 1778685805652 Produced output for time point: (datetime) 2026-05-13T17:22:51 (ms) 1778692971000
+2026-05-13T17:22:51	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(19,39), step(3)]
+1778685809987 Received input for time point: datetime> 2026-05-13T17:22:52 ms> 1778692972000
+1778685810107	DLV2	0	2026-05-13T17:22:52	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,036657
+1778685810299	0	1778692972	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003512
+1778685810306	0	1778692972	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003063
+1778685810311	0	1778692972	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003444
+1778685810317	0	1778692972	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004009
+1778685810323	0	1778692972	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003090
+1778685810332	0	1778692972	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,007218
+1778685810335	0	1778692972	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,001791
+1778685810338	0	1778692972	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,001942
+1778685810340	0	1778692972	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001688
+1778685810466	DLV2	0	1778692972	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,124666
+ANSWER> 1778685810710 Produced output for time point: (datetime) 2026-05-13T17:22:52 (ms) 1778692972000
+2026-05-13T17:22:52	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(19,38), step(4)]
+1778685814989 Received input for time point: datetime> 2026-05-13T17:22:53 ms> 1778692973000
+1778685815172	DLV2	1	2026-05-13T17:22:53	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,026786
+1778685815377	0	1778692973	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,001974
+1778685815379	0	1778692973	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002299
+1778685815382	0	1778692973	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002155
+1778685815384	0	1778692973	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002345
+1778685815387	0	1778692973	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002513
+1778685815394	0	1778692973	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005778
+1778685815396	0	1778692973	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002061
+1778685815398	0	1778692973	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002145
+1778685815401	0	1778692973	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002067
+1778685815540	DLV2	0	1778692973	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,137888
+ANSWER> 1778685815717 Produced output for time point: (datetime) 2026-05-13T17:22:53 (ms) 1778692973000
+2026-05-13T17:22:53	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(20,38), step(5)]
+1778685819986 Received input for time point: datetime> 2026-05-13T17:22:54 ms> 1778692974000
+1778685820156	DLV2	0	2026-05-13T17:22:54	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007469
+1778685820287	0	1778692974	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,001720
+1778685820291	0	1778692974	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001621
+1778685820293	0	1778692974	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,001681
+1778685820296	0	1778692974	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001946
+1778685820298	0	1778692974	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002153
+1778685820304	0	1778692974	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005214
+1778685820306	0	1778692974	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,001463
+1778685820307	0	1778692974	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,001240
+1778685820309	0	1778692974	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001522
+1778685820415	DLV2	0	1778692974	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,104208
+ANSWER> 1778685820622 Produced output for time point: (datetime) 2026-05-13T17:22:54 (ms) 1778692974000
+2026-05-13T17:22:54	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(20,37), step(6)]
+1778685824981 Received input for time point: datetime> 2026-05-13T17:22:55 ms> 1778692975000
+1778685825181	DLV2	1	2026-05-13T17:22:55	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,022918
+1778685825398	0	1778692975	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002947
+1778685825402	0	1778692975	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002842
+1778685825406	0	1778692975	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003181
+1778685825411	0	1778692975	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004243
+1778685825417	0	1778692975	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003861
+1778685825443	0	1778692975	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,025549
+1778685825448	0	1778692975	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003649
+1778685825453	0	1778692975	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004125
+1778685825458	0	1778692975	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003633
+1778685825581	DLV2	0	1778692975	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,122061
+ANSWER> 1778685825830 Produced output for time point: (datetime) 2026-05-13T17:22:55 (ms) 1778692975000
+2026-05-13T17:22:55	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(20,36), step(7)]
+1778685829985 Received input for time point: datetime> 2026-05-13T17:22:56 ms> 1778692976000
+1778685830185	DLV2	0	2026-05-13T17:22:56	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,009461
+1778685830297	0	1778692976	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,001775
+1778685830299	0	1778692976	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001697
+1778685830301	0	1778692976	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,001757
+1778685830304	0	1778692976	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001918
+1778685830306	0	1778692976	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,001833
+1778685830310	0	1778692976	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004259
+1778685830312	0	1778692976	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,001742
+1778685830314	0	1778692976	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,001829
+1778685830316	0	1778692976	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001695
+1778685830420	DLV2	0	1778692976	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,103056
+ANSWER> 1778685830636 Produced output for time point: (datetime) 2026-05-13T17:22:56 (ms) 1778692976000
+2026-05-13T17:22:56	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(21,36), step(8)]
+1778685834976 Received input for time point: datetime> 2026-05-13T17:22:57 ms> 1778692977000
+1778685835294	DLV2	1	2026-05-13T17:22:57	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,010988
+1778685835505	0	1778692977	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,001997
+1778685835507	0	1778692977	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001817
+1778685835509	0	1778692977	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,001957
+1778685835512	0	1778692977	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002261
+1778685835514	0	1778692977	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002380
+1778685835519	0	1778692977	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004663
+1778685835521	0	1778692977	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002036
+1778685835524	0	1778692977	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002165
+1778685835526	0	1778692977	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002034
+1778685835697	DLV2	0	1778692977	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,170068
+ANSWER> 1778685835944 Produced output for time point: (datetime) 2026-05-13T17:22:57 (ms) 1778692977000
+2026-05-13T17:22:57	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,36), step(9)]
+1778685839968 Received input for time point: datetime> 2026-05-13T17:22:58 ms> 1778692978000
+1778685840102	DLV2	0	2026-05-13T17:22:58	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,010250
+1778685840212	0	1778692978	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002155
+1778685840214	0	1778692978	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001860
+1778685840216	0	1778692978	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,001862
+1778685840218	0	1778692978	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001951
+1778685840221	0	1778692978	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002053
+1778685840225	0	1778692978	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004465
+1778685840228	0	1778692978	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,001933
+1778685840230	0	1778692978	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002296
+1778685840232	0	1778692978	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,001833
+1778685840358	DLV2	0	1778692978	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,124875
+ANSWER> 1778685840550 Produced output for time point: (datetime) 2026-05-13T17:22:58 (ms) 1778692978000
+2026-05-13T17:22:58	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,35), step(10)]
+1778685844976 Received input for time point: datetime> 2026-05-13T17:22:59 ms> 1778692979000
+1778685845120	DLV2	1	2026-05-13T17:22:59	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,020609
+1778685845316	0	1778692979	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,001965
+1778685845319	0	1778692979	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,001892
+1778685845321	0	1778692979	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002453
+1778685845325	0	1778692979	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002875
+1778685845328	0	1778692979	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002931
+1778685845335	0	1778692979	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,007052
+1778685845338	0	1778692979	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002757
+1778685845342	0	1778692979	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002949
+1778685845344	0	1778692979	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002606
+1778685845453	DLV2	0	1778692979	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,108259
+ANSWER> 1778685845658 Produced output for time point: (datetime) 2026-05-13T17:22:59 (ms) 1778692979000
+2026-05-13T17:22:59	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,34), step(11)]
+1778685850009 Received input for time point: datetime> 2026-05-13T17:23 ms> 1778692980000
+1778685850117	DLV2	0	2026-05-13T17:23	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,009564
+1778685850231	0	1778692980	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002943
+1778685850234	0	1778692980	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002645
+1778685850237	0	1778692980	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002471
+1778685850240	0	1778692980	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002469
+1778685850243	0	1778692980	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002417
+1778685850246	0	1778692980	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003583
+1778685850249	0	1778692980	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002102
+1778685850251	0	1778692980	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002137
+1778685850254	0	1778692980	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002033
+1778685850369	DLV2	0	1778692980	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,114661
+ANSWER> 1778685850565 Produced output for time point: (datetime) 2026-05-13T17:23 (ms) 1778692980000
+2026-05-13T17:23	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,33), step(12)]
+1778685854979 Received input for time point: datetime> 2026-05-13T17:23:01 ms> 1778692981000
+1778685855142	DLV2	1	2026-05-13T17:23:01	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,023435
+1778685855331	0	1778692981	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002065
+1778685855333	0	1778692981	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002050
+1778685855335	0	1778692981	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002203
+1778685855338	0	1778692981	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002519
+1778685855341	0	1778692981	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002557
+1778685855344	0	1778692981	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,002942
+1778685855346	0	1778692981	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002119
+1778685855349	0	1778692981	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002256
+1778685855351	0	1778692981	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002299
+1778685855455	DLV2	0	1778692981	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,103022
+ANSWER> 1778685855672 Produced output for time point: (datetime) 2026-05-13T17:23:01 (ms) 1778692981000
+2026-05-13T17:23:01	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,32), step(13)]
+1778685859980 Received input for time point: datetime> 2026-05-13T17:23:02 ms> 1778692982000
+1778685860230	DLV2	0	2026-05-13T17:23:02	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,008648
+1778685860339	0	1778692982	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002222
+1778685860342	0	1778692982	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002322
+1778685860344	0	1778692982	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002425
+1778685860347	0	1778692982	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002393
+1778685860350	0	1778692982	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002677
+1778685860354	0	1778692982	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003764
+1778685860356	0	1778692982	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002377
+1778685860360	0	1778692982	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002922
+1778685860362	0	1778692982	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002428
+1778685860466	DLV2	0	1778692982	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,102998
+ANSWER> 1778685860678 Produced output for time point: (datetime) 2026-05-13T17:23:02 (ms) 1778692982000
+2026-05-13T17:23:02	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,31), step(14)]
+1778685864977 Received input for time point: datetime> 2026-05-13T17:23:03 ms> 1778692983000
+1778685865253	DLV2	1	2026-05-13T17:23:03	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,020361
+1778685865476	0	1778692983	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,005085
+1778685865479	0	1778692983	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003210
+1778685865483	0	1778692983	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002856
+1778685865486	0	1778692983	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003396
+1778685865490	0	1778692983	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003110
+1778685865494	0	1778692983	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003734
+1778685865496	0	1778692983	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002595
+1778685865499	0	1778692983	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002818
+1778685865502	0	1778692983	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002701
+1778685865606	DLV2	0	1778692983	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,102945
+ANSWER> 1778685865785 Produced output for time point: (datetime) 2026-05-13T17:23:03 (ms) 1778692983000
+2026-05-13T17:23:03	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,30), step(15)]
+1778685869977 Received input for time point: datetime> 2026-05-13T17:23:04 ms> 1778692984000
+1778685870045	DLV2	0	2026-05-13T17:23:04	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,009045
+1778685870156	0	1778692984	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002764
+1778685870159	0	1778692984	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002841
+1778685870162	0	1778692984	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002803
+1778685870165	0	1778692984	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002848
+1778685870168	0	1778692984	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002999
+1778685870173	0	1778692984	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004686
+1778685870177	0	1778692984	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003664
+1778685870181	0	1778692984	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003612
+1778685870184	0	1778692984	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002899
+1778685870330	DLV2	0	1778692984	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,144522
+ANSWER> 1778685870491 Produced output for time point: (datetime) 2026-05-13T17:23:04 (ms) 1778692984000
+2026-05-13T17:23:04	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,29), step(16)]
+1778685874976 Received input for time point: datetime> 2026-05-13T17:23:05 ms> 1778692985000
+1778685875167	DLV2	1	2026-05-13T17:23:05	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,021078
+1778685875381	0	1778692985	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,005331
+1778685875386	0	1778692985	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004351
+1778685875390	0	1778692985	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003792
+1778685875394	0	1778692985	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003481
+1778685875397	0	1778692985	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003266
+1778685875402	0	1778692985	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004490
+1778685875406	0	1778692985	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003116
+1778685875409	0	1778692985	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003013
+1778685875412	0	1778692985	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003009
+1778685875520	DLV2	0	1778692985	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,107395
+ANSWER> 1778685875697 Produced output for time point: (datetime) 2026-05-13T17:23:05 (ms) 1778692985000
+2026-05-13T17:23:05	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,28), step(17)]
+1778685879966 Received input for time point: datetime> 2026-05-13T17:23:06 ms> 1778692986000
+1778685880158	DLV2	0	2026-05-13T17:23:06	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006534
+1778685880279	0	1778692986	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003841
+1778685880283	0	1778692986	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003700
+1778685880287	0	1778692986	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003954
+1778685880291	0	1778692986	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003782
+1778685880296	0	1778692986	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004194
+1778685880302	0	1778692986	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005938
+1778685880306	0	1778692986	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003550
+1778685880310	0	1778692986	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003773
+1778685880314	0	1778692986	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003593
+1778685880471	DLV2	0	1778692986	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,156312
+ANSWER> 1778685880703 Produced output for time point: (datetime) 2026-05-13T17:23:06 (ms) 1778692986000
+2026-05-13T17:23:06	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(21,28), step(18)]
+1778685884976 Received input for time point: datetime> 2026-05-13T17:23:07 ms> 1778692987000
+1778685885185	DLV2	1	2026-05-13T17:23:07	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,024573
+1778685885382	0	1778692987	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003470
+1778685885386	0	1778692987	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003503
+1778685885390	0	1778692987	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003401
+1778685885394	0	1778692987	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003465
+1778685885397	0	1778692987	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003628
+1778685885402	0	1778692987	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004734
+1778685885406	0	1778692987	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003719
+1778685885410	0	1778692987	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003687
+1778685885414	0	1778692987	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003639
+1778685885473	DLV2	0	1778692987	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,058107
+ANSWER> 1778685885709 Produced output for time point: (datetime) 2026-05-13T17:23:07 (ms) 1778692987000
+2026-05-13T17:23:07	[num_frogs(63), num_plants(62), positionPlayer(21,27), step(19)]
+1778685889970 Received input for time point: datetime> 2026-05-13T17:23:08 ms> 1778692988000
+1778685890173	DLV2	0	2026-05-13T17:23:08	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,008180
+1778685890319	0	1778692988	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003215
+1778685890323	0	1778692988	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003828
+1778685890328	0	1778692988	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,004292
+1778685890332	0	1778692988	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003320
+1778685890335	0	1778692988	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003562
+1778685890340	0	1778692988	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004630
+1778685890344	0	1778692988	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003455
+1778685890348	0	1778692988	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003727
+1778685890352	0	1778692988	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004084
+1778685890412	DLV2	0	1778692988	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,058960
+ANSWER> 1778685890616 Produced output for time point: (datetime) 2026-05-13T17:23:08 (ms) 1778692988000
+2026-05-13T17:23:08	[num_frogs(63), num_plants(62), positionPlayer(21,26), step(20)]
+1778685894967 Received input for time point: datetime> 2026-05-13T17:23:09 ms> 1778692989000
+1778685895302	DLV2	1	2026-05-13T17:23:09	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,026556
+1778685895568	0	1778692989	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,005654
+1778685895573	0	1778692989	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004415
+1778685895577	0	1778692989	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,004103
+1778685895582	0	1778692989	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003875
+1778685895585	0	1778692989	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003658
+1778685895591	0	1778692989	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004907
+1778685895595	0	1778692989	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003479
+1778685895598	0	1778692989	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003577
+1778685895602	0	1778692989	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003448
+1778685895711	DLV2	0	1778692989	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,107850
+ANSWER> 1778685895944 Produced output for time point: (datetime) 2026-05-13T17:23:09 (ms) 1778692989000
+2026-05-13T17:23:09	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(21,25), step(21)]
+1778685899976 Received input for time point: datetime> 2026-05-13T17:23:10 ms> 1778692990000
+1778685900100	DLV2	0	2026-05-13T17:23:10	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,019425
+1778685900214	0	1778692990	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003576
+1778685900217	0	1778692990	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003337
+1778685900222	0	1778692990	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003656
+1778685900226	0	1778692990	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003729
+1778685900230	0	1778692990	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004198
+1778685900235	0	1778692990	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004796
+1778685900240	0	1778692990	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,004522
+1778685900244	0	1778692990	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003621
+1778685900248	0	1778692990	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003995
+1778685900311	DLV2	0	1778692990	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,061864
+ANSWER> 1778685900551 Produced output for time point: (datetime) 2026-05-13T17:23:10 (ms) 1778692990000
+2026-05-13T17:23:10	[num_frogs(63), num_plants(62), positionPlayer(21,24), step(22)]
+1778685904974 Received input for time point: datetime> 2026-05-13T17:23:11 ms> 1778692991000
+1778685905095	DLV2	1	2026-05-13T17:23:11	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,009165
+1778685905321	0	1778692991	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004122
+1778685905325	0	1778692991	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004017
+1778685905330	0	1778692991	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003932
+1778685905334	0	1778692991	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003381
+1778685905337	0	1778692991	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003512
+1778685905342	0	1778692991	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004235
+1778685905345	0	1778692991	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003216
+1778685905349	0	1778692991	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003317
+1778685905353	0	1778692991	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003352
+1778685905411	DLV2	0	1778692991	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,057436
+ANSWER> 1778685905659 Produced output for time point: (datetime) 2026-05-13T17:23:11 (ms) 1778692991000
+2026-05-13T17:23:11	[num_frogs(63), num_plants(62), positionPlayer(21,23), step(23)]
+1778685909967 Received input for time point: datetime> 2026-05-13T17:23:12 ms> 1778692992000
+1778685910114	DLV2	0	2026-05-13T17:23:12	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,020519
+1778685910224	0	1778692992	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003153
+1778685910228	0	1778692992	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003459
+1778685910232	0	1778692992	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003491
+1778685910235	0	1778692992	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003438
+1778685910240	0	1778692992	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003953
+1778685910246	0	1778692992	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,006040
+1778685910250	0	1778692992	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003876
+1778685910254	0	1778692992	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004078
+1778685910258	0	1778692992	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003736
+1778685910373	DLV2	0	1778692992	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,114149
+ANSWER> 1778685910566 Produced output for time point: (datetime) 2026-05-13T17:23:12 (ms) 1778692992000
+2026-05-13T17:23:12	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(22,23), step(24)]
+1778685914966 Received input for time point: datetime> 2026-05-13T17:23:13 ms> 1778692993000
+1778685915123	DLV2	1	2026-05-13T17:23:13	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,022678
+1778685915329	0	1778692993	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003273
+1778685915333	0	1778692993	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004507
+1778685915337	0	1778692993	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003515
+1778685915341	0	1778692993	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004098
+1778685915348	0	1778692993	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,006075
+1778685915354	0	1778692993	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005469
+1778685915357	0	1778692993	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003473
+1778685915361	0	1778692993	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003526
+1778685915366	0	1778692993	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,005035
+1778685915432	DLV2	0	1778692993	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,064920
+ANSWER> 1778685915673 Produced output for time point: (datetime) 2026-05-13T17:23:13 (ms) 1778692993000
+2026-05-13T17:23:13	[num_frogs(63), num_plants(62), positionPlayer(23,23), step(25)]
+1778685919977 Received input for time point: datetime> 2026-05-13T17:23:14 ms> 1778692994000
+1778685920222	DLV2	0	2026-05-13T17:23:14	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,013859
+1778685920325	0	1778692994	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002916
+1778685920328	0	1778692994	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003026
+1778685920332	0	1778692994	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002962
+1778685920335	0	1778692994	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003043
+1778685920338	0	1778692994	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003310
+1778685920343	0	1778692994	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004164
+1778685920346	0	1778692994	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003313
+1778685920350	0	1778692994	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003987
+1778685920354	0	1778692994	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003518
+1778685920421	DLV2	0	1778692994	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,065895
+ANSWER> 1778685920680 Produced output for time point: (datetime) 2026-05-13T17:23:14 (ms) 1778692994000
+2026-05-13T17:23:14	[num_frogs(63), num_plants(62), positionPlayer(23,22), step(26)]
+1778685924967 Received input for time point: datetime> 2026-05-13T17:23:15 ms> 1778692995000
+1778685925219	DLV2	1	2026-05-13T17:23:15	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006390
+1778685925454	0	1778692995	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004838
+1778685925459	0	1778692995	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004148
+1778685925463	0	1778692995	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003981
+1778685925467	0	1778692995	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003525
+1778685925471	0	1778692995	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003709
+1778685925477	0	1778692995	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005638
+1778685925481	0	1778692995	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003933
+1778685925485	0	1778692995	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003561
+1778685925489	0	1778692995	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003724
+1778685925615	DLV2	0	1778692995	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,125076
+ANSWER> 1778685925887 Produced output for time point: (datetime) 2026-05-13T17:23:15 (ms) 1778692995000
+2026-05-13T17:23:15	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(24,22), step(27)]
+1778685929974 Received input for time point: datetime> 2026-05-13T17:23:16 ms> 1778692996000
+1778685930231	DLV2	0	2026-05-13T17:23:16	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,012297
+1778685930358	0	1778692996	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003416
+1778685930362	0	1778692996	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003663
+1778685930366	0	1778692996	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003889
+1778685930371	0	1778692996	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004177
+1778685930375	0	1778692996	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004195
+1778685930383	0	1778692996	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,007308
+1778685930389	0	1778692996	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,004967
+1778685930395	0	1778692996	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,005563
+1778685930401	0	1778692996	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,005813
+1778685930527	DLV2	0	1778692996	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,124496
+ANSWER> 1778685930793 Produced output for time point: (datetime) 2026-05-13T17:23:16 (ms) 1778692996000
+2026-05-13T17:23:16	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(25,22), step(28)]
+1778685934976 Received input for time point: datetime> 2026-05-13T17:23:17 ms> 1778692997000
+1778685935046	DLV2	1	2026-05-13T17:23:17	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,014631
+1778685935279	0	1778692997	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,006335
+1778685935285	0	1778692997	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,005368
+1778685935291	0	1778692997	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,005055
+1778685935296	0	1778692997	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,005063
+1778685935300	0	1778692997	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004078
+1778685935305	0	1778692997	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004241
+1778685935309	0	1778692997	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,004006
+1778685935313	0	1778692997	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004031
+1778685935317	0	1778692997	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003211
+1778685935384	DLV2	0	1778692997	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,066175
+ANSWER> 1778685935599 Produced output for time point: (datetime) 2026-05-13T17:23:17 (ms) 1778692997000
+2026-05-13T17:23:17	[num_frogs(63), num_plants(62), positionPlayer(25,21), step(29)]
+1778685939967 Received input for time point: datetime> 2026-05-13T17:23:18 ms> 1778692998000
+1778685940141	DLV2	0	2026-05-13T17:23:18	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007849
+1778685940259	0	1778692998	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003897
+1778685940264	0	1778692998	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,005121
+1778685940270	0	1778692998	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,005288
+1778685940276	0	1778692998	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,005457
+1778685940282	0	1778692998	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,005634
+1778685940290	0	1778692998	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,007738
+1778685940295	0	1778692998	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,004979
+1778685940300	0	1778692998	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004795
+1778685940304	0	1778692998	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003471
+1778685940379	DLV2	0	1778692998	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,074048
+ANSWER> 1778685940606 Produced output for time point: (datetime) 2026-05-13T17:23:18 (ms) 1778692998000
+2026-05-13T17:23:18	[num_frogs(63), num_plants(62), positionPlayer(26,21), step(30)]
+1778685944978 Received input for time point: datetime> 2026-05-13T17:23:19 ms> 1778692999000
+1778685945184	DLV2	1	2026-05-13T17:23:19	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,041804
+1778685945360	0	1778692999	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002751
+1778685945363	0	1778692999	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002727
+1778685945366	0	1778692999	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002743
+1778685945370	0	1778692999	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003526
+1778685945373	0	1778692999	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002905
+1778685945377	0	1778692999	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003583
+1778685945380	0	1778692999	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002823
+1778685945383	0	1778692999	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002842
+1778685945386	0	1778692999	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002969
+1778685945487	DLV2	0	1778692999	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,100502
+ANSWER> 1778685945713 Produced output for time point: (datetime) 2026-05-13T17:23:19 (ms) 1778692999000
+2026-05-13T17:23:19	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(27,21), step(31)]
+1778685949967 Received input for time point: datetime> 2026-05-13T17:23:20 ms> 1778693000000
+1778685950171	DLV2	0	2026-05-13T17:23:20	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,019570
+1778685950274	0	1778693000	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003133
+1778685950277	0	1778693000	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003150
+1778685950281	0	1778693000	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003453
+1778685950285	0	1778693000	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003643
+1778685950288	0	1778693000	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003133
+1778685950292	0	1778693000	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003985
+1778685950296	0	1778693000	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002948
+1778685950299	0	1778693000	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003297
+1778685950302	0	1778693000	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003111
+1778685950359	DLV2	0	1778693000	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,056035
+ANSWER> 1778685950620 Produced output for time point: (datetime) 2026-05-13T17:23:20 (ms) 1778693000000
+2026-05-13T17:23:20	[num_frogs(63), num_plants(62), positionPlayer(28,21), step(32)]
+1778685954972 Received input for time point: datetime> 2026-05-13T17:23:21 ms> 1778693001000
+1778685955165	DLV2	1	2026-05-13T17:23:21	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,010209
+1778685955379	0	1778693001	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002768
+1778685955382	0	1778693001	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002758
+1778685955385	0	1778693001	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002828
+1778685955388	0	1778693001	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002897
+1778685955391	0	1778693001	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003069
+1778685955395	0	1778693001	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004045
+1778685955398	0	1778693001	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003210
+1778685955402	0	1778693001	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003382
+1778685955406	0	1778693001	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003306
+1778685955490	DLV2	0	1778693001	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,083959
+ANSWER> 1778685955726 Produced output for time point: (datetime) 2026-05-13T17:23:21 (ms) 1778693001000
+2026-05-13T17:23:21	[num_frogs(63), num_plants(62), positionPlayer(29,21), step(33)]
+1778685959967 Received input for time point: datetime> 2026-05-13T17:23:22 ms> 1778693002000
+1778685960275	DLV2	0	2026-05-13T17:23:22	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,012017
+1778685960391	0	1778693002	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003828
+1778685960395	0	1778693002	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004006
+1778685960399	0	1778693002	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003748
+1778685960404	0	1778693002	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004588
+1778685960409	0	1778693002	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004302
+1778685960415	0	1778693002	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004904
+1778685960420	0	1778693002	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,004064
+1778685960424	0	1778693002	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004146
+1778685960429	0	1778693002	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004041
+1778685960539	DLV2	0	1778693002	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,108583
+ANSWER> 1778685960733 Produced output for time point: (datetime) 2026-05-13T17:23:22 (ms) 1778693002000
+2026-05-13T17:23:22	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(29,20), step(34)]
+1778685964968 Received input for time point: datetime> 2026-05-13T17:23:23 ms> 1778693003000
+1778685965090	DLV2	1	2026-05-13T17:23:23	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,020029
+1778685965306	0	1778693003	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003921
+1778685965310	0	1778693003	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003629
+1778685965314	0	1778693003	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003476
+1778685965318	0	1778693003	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003451
+1778685965321	0	1778693003	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003160
+1778685965325	0	1778693003	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003963
+1778685965329	0	1778693003	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003115
+1778685965332	0	1778693003	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003371
+1778685965336	0	1778693003	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003360
+1778685965395	DLV2	0	1778693003	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,058976
+ANSWER> 1778685965640 Produced output for time point: (datetime) 2026-05-13T17:23:23 (ms) 1778693003000
+2026-05-13T17:23:23	[num_frogs(63), num_plants(62), positionPlayer(29,19), step(35)]
+1778685969968 Received input for time point: datetime> 2026-05-13T17:23:24 ms> 1778693004000
+1778685970114	DLV2	0	2026-05-13T17:23:24	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007351
+1778685970235	0	1778693004	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004228
+1778685970239	0	1778693004	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003633
+1778685970243	0	1778693004	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003936
+1778685970246	0	1778693004	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003363
+1778685970250	0	1778693004	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003341
+1778685970254	0	1778693004	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004092
+1778685970258	0	1778693004	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003023
+1778685970261	0	1778693004	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003266
+1778685970264	0	1778693004	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003048
+1778685970324	DLV2	0	1778693004	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,059096
+ANSWER> 1778685970547 Produced output for time point: (datetime) 2026-05-13T17:23:24 (ms) 1778693004000
+2026-05-13T17:23:24	[num_frogs(63), num_plants(62), positionPlayer(29,18), step(36)]
+1778685975979 Received input for time point: datetime> 2026-05-13T17:23:25 ms> 1778693005000
+1778685976107	DLV2	1	2026-05-13T17:23:25	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,021971
+1778685976325	0	1778693005	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002891
+1778685976328	0	1778693005	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002706
+1778685976332	0	1778693005	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003682
+1778685976335	0	1778693005	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002912
+1778685976338	0	1778693005	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002697
+1778685976342	0	1778693005	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003480
+1778685976345	0	1778693005	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002894
+1778685976348	0	1778693005	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002927
+1778685976351	0	1778693005	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002945
+1778685976454	DLV2	0	1778693005	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,101994
+ANSWER> 1778685976655 Produced output for time point: (datetime) 2026-05-13T17:23:25 (ms) 1778693005000
+2026-05-13T17:23:25	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(29,17), step(37)]
+1778685980971 Received input for time point: datetime> 2026-05-13T17:23:26 ms> 1778693006000
+1778685981199	DLV2	0	2026-05-13T17:23:26	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007762
+1778685981337	0	1778693006	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003016
+1778685981340	0	1778693006	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003174
+1778685981344	0	1778693006	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002986
+1778685981347	0	1778693006	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003012
+1778685981350	0	1778693006	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003085
+1778685981354	0	1778693006	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003855
+1778685981357	0	1778693006	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003196
+1778685981361	0	1778693006	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003302
+1778685981364	0	1778693006	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003374
+1778685981426	DLV2	0	1778693006	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,060627
+ANSWER> 1778685981662 Produced output for time point: (datetime) 2026-05-13T17:23:26 (ms) 1778693006000
+2026-05-13T17:23:26	[num_frogs(63), num_plants(62), positionPlayer(30,17), step(38)]
+1778685985968 Received input for time point: datetime> 2026-05-13T17:23:27 ms> 1778693007000
+1778685986236	DLV2	1	2026-05-13T17:23:27	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,035661
+1778685986453	0	1778693007	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004502
+1778685986457	0	1778693007	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003503
+1778685986461	0	1778693007	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003653
+1778685986465	0	1778693007	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003712
+1778685986470	0	1778693007	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,005133
+1778685986477	0	1778693007	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,006552
+1778685986481	0	1778693007	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003513
+1778685986484	0	1778693007	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003580
+1778685986488	0	1778693007	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003604
+1778685986554	DLV2	0	1778693007	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,065468
+ANSWER> 1778685986771 Produced output for time point: (datetime) 2026-05-13T17:23:27 (ms) 1778693007000
+2026-05-13T17:23:27	[num_frogs(63), num_plants(62), positionPlayer(31,17), step(39)]
+1778685990969 Received input for time point: datetime> 2026-05-13T17:23:28 ms> 1778693008000
+1778685991211	DLV2	0	2026-05-13T17:23:28	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006676
+1778685991354	0	1778693008	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004506
+1778685991358	0	1778693008	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003678
+1778685991362	0	1778693008	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003761
+1778685991367	0	1778693008	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004056
+1778685991371	0	1778693008	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003917
+1778685991376	0	1778693008	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004732
+1778685991379	0	1778693008	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002844
+1778685991383	0	1778693008	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003007
+1778685991386	0	1778693008	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002982
+1778685991487	DLV2	0	1778693008	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,100283
+ANSWER> 1778685991677 Produced output for time point: (datetime) 2026-05-13T17:23:28 (ms) 1778693008000
+2026-05-13T17:23:28	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(32,17), step(40)]
+1778685995967 Received input for time point: datetime> 2026-05-13T17:23:29 ms> 1778693009000
+1778685996148	DLV2	1	2026-05-13T17:23:29	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007562
+1778685996355	0	1778693009	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002688
+1778685996358	0	1778693009	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002701
+1778685996361	0	1778693009	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002735
+1778685996364	0	1778693009	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002964
+1778685996367	0	1778693009	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002788
+1778685996371	0	1778693009	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003629
+1778685996374	0	1778693009	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002782
+1778685996377	0	1778693009	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,002939
+1778685996380	0	1778693009	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002980
+1778685996446	DLV2	0	1778693009	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,065674
+ANSWER> 1778685996683 Produced output for time point: (datetime) 2026-05-13T17:23:29 (ms) 1778693009000
+2026-05-13T17:23:29	[num_frogs(63), num_plants(62), positionPlayer(32,16), step(41)]
+1778686000971 Received input for time point: datetime> 2026-05-13T17:23:30 ms> 1778693010000
+1778686001154	DLV2	0	2026-05-13T17:23:30	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006825
+1778686001266	0	1778693010	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002843
+1778686001270	0	1778693010	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003007
+1778686001273	0	1778693010	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002889
+1778686001276	0	1778693010	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003018
+1778686001279	0	1778693010	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,002869
+1778686001283	0	1778693010	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004167
+1778686001286	0	1778693010	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,002841
+1778686001290	0	1778693010	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003122
+1778686001293	0	1778693010	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002904
+1778686001352	DLV2	0	1778693010	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,058563
+ANSWER> 1778686001590 Produced output for time point: (datetime) 2026-05-13T17:23:30 (ms) 1778693010000
+2026-05-13T17:23:30	[num_frogs(63), num_plants(62), positionPlayer(32,15), step(42)]
+1778686005989 Received input for time point: datetime> 2026-05-13T17:23:31 ms> 1778693011000
+1778686006197	DLV2	1	2026-05-13T17:23:31	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,036960
+1778686006372	0	1778693011	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003182
+1778686006375	0	1778693011	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003367
+1778686006379	0	1778693011	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003175
+1778686006382	0	1778693011	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003159
+1778686006386	0	1778693011	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003214
+1778686006390	0	1778693011	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004075
+1778686006393	0	1778693011	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003142
+1778686006397	0	1778693011	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003270
+1778686006400	0	1778693011	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003308
+1778686006517	DLV2	0	1778693011	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,116117
+ANSWER> 1778686006696 Produced output for time point: (datetime) 2026-05-13T17:23:31 (ms) 1778693011000
+2026-05-13T17:23:31	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(32,14), step(43)]
+1778686010977 Received input for time point: datetime> 2026-05-13T17:23:32 ms> 1778693012000
+1778686011171	DLV2	0	2026-05-13T17:23:32	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,008519
+1778686011382	0	1778693012	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003312
+1778686011386	0	1778693012	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003255
+1778686011389	0	1778693012	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003171
+1778686011392	0	1778693012	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003123
+1778686011396	0	1778693012	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003433
+1778686011400	0	1778693012	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003935
+1778686011403	0	1778693012	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003094
+1778686011407	0	1778693012	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003201
+1778686011410	0	1778693012	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003187
+1778686011474	DLV2	0	1778693012	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,063570
+ANSWER> 1778686011705 Produced output for time point: (datetime) 2026-05-13T17:23:32 (ms) 1778693012000
+2026-05-13T17:23:32	[num_frogs(63), num_plants(62), positionPlayer(32,13), step(44)]
+1778686015972 Received input for time point: datetime> 2026-05-13T17:23:33 ms> 1778693013000
+1778686016178	DLV2	1	2026-05-13T17:23:33	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007050
+1778686016400	0	1778693013	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003821
+1778686016408	0	1778693013	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003699
+1778686016412	0	1778693013	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003876
+1778686016416	0	1778693013	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003851
+1778686016424	0	1778693013	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004167
+1778686016431	0	1778693013	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,006370
+1778686016440	0	1778693013	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003894
+1778686016444	0	1778693013	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004069
+1778686016449	0	1778693013	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003909
+1778686016664	DLV2	0	1778693013	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,213816
+ANSWER> 1778686016875 Produced output for time point: (datetime) 2026-05-13T17:23:33 (ms) 1778693013000
+2026-05-13T17:23:33	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(32,12), step(45)]
+1778686020971 Received input for time point: datetime> 2026-05-13T17:23:34 ms> 1778693014000
+1778686021285	DLV2	0	2026-05-13T17:23:34	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006802
+1778686021508	0	1778693014	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003762
+1778686021512	0	1778693014	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003594
+1778686021515	0	1778693014	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003085
+1778686021519	0	1778693014	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003683
+1778686021522	0	1778693014	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003188
+1778686021526	0	1778693014	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,003921
+1778686021530	0	1778693014	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003171
+1778686021533	0	1778693014	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003214
+1778686021537	0	1778693014	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003265
+1778686021656	DLV2	0	1778693014	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,118476
+ANSWER> 1778686021818 Produced output for time point: (datetime) 2026-05-13T17:23:34 (ms) 1778693014000
+2026-05-13T17:23:34	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,12), step(46)]
+1778686025972 Received input for time point: datetime> 2026-05-13T17:23:35 ms> 1778693015000
+1778686026289	DLV2	1	2026-05-13T17:23:35	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,005700
+1778686026505	0	1778693015	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003724
+1778686026509	0	1778693015	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003606
+1778686026514	0	1778693015	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003876
+1778686026518	0	1778693015	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004009
+1778686026523	0	1778693015	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004311
+1778686026529	0	1778693015	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005974
+1778686026534	0	1778693015	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003767
+1778686026538	0	1778693015	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004169
+1778686026545	0	1778693015	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,006225
+1778686026675	DLV2	0	1778693015	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,128877
+ANSWER> 1778686026887 Produced output for time point: (datetime) 2026-05-13T17:23:35 (ms) 1778693015000
+2026-05-13T17:23:35	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,11), step(47)]
+1778686030975 Received input for time point: datetime> 2026-05-13T17:23:36 ms> 1778693016000
+1778686031111	DLV2	0	2026-05-13T17:23:36	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,020004
+1778686031334	0	1778693016	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004885
+1778686031339	0	1778693016	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004451
+1778686031344	0	1778693016	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,004599
+1778686031349	0	1778693016	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004650
+1778686031354	0	1778693016	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004701
+1778686031361	0	1778693016	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,006352
+1778686031365	0	1778693016	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003799
+1778686031369	0	1778693016	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003675
+1778686031372	0	1778693016	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002860
+1778686031476	DLV2	0	1778693016	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,103501
+ANSWER> 1778686031632 Produced output for time point: (datetime) 2026-05-13T17:23:36 (ms) 1778693016000
+2026-05-13T17:23:36	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,10), step(48)]
+1778686035977 Received input for time point: datetime> 2026-05-13T17:23:37 ms> 1778693017000
+1778686036117	DLV2	1	2026-05-13T17:23:37	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,019152
+1778686036213	0	1778693017	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,002885
+1778686036216	0	1778693017	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,002815
+1778686036219	0	1778693017	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,002997
+1778686036223	0	1778693017	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003084
+1778686036226	0	1778693017	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003403
+1778686036231	0	1778693017	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004957
+1778686036235	0	1778693017	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003324
+1778686036239	0	1778693017	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003839
+1778686036242	0	1778693017	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003425
+1778686036354	DLV2	0	1778693017	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,110793
+ANSWER> 1778686036540 Produced output for time point: (datetime) 2026-05-13T17:23:37 (ms) 1778693017000
+2026-05-13T17:23:37	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,9), step(49)]
+1778686040978 Received input for time point: datetime> 2026-05-13T17:23:38 ms> 1778693018000
+1778686041210	DLV2	0	2026-05-13T17:23:38	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006291
+1778686041441	0	1778693018	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,006437
+1778686041448	0	1778693018	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,006434
+1778686041454	0	1778693018	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,005294
+1778686041459	0	1778693018	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004952
+1778686041464	0	1778693018	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004648
+1778686041470	0	1778693018	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005451
+1778686041474	0	1778693018	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003484
+1778686041478	0	1778693018	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004666
+1778686041484	0	1778693018	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004859
+1778686041610	DLV2	0	1778693018	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,125330
+ANSWER> 1778686041821 Produced output for time point: (datetime) 2026-05-13T17:23:38 (ms) 1778693018000
+2026-05-13T17:23:38	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(30,9), step(50)]
+1778686045974 Received input for time point: datetime> 2026-05-13T17:23:39 ms> 1778693019000
+1778686046234	DLV2	1	2026-05-13T17:23:39	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,005705
+1778686046463	0	1778693019	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003754
+1778686046467	0	1778693019	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003125
+1778686046470	0	1778693019	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003200
+1778686046473	0	1778693019	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,002989
+1778686046477	0	1778693019	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003215
+1778686046481	0	1778693019	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004005
+1778686046484	0	1778693019	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003200
+1778686046488	0	1778693019	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003359
+1778686046491	0	1778693019	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003281
+1778686046629	DLV2	0	1778693019	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,137477
+ANSWER> 1778686046928 Produced output for time point: (datetime) 2026-05-13T17:23:39 (ms) 1778693019000
+2026-05-13T17:23:39	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(29,9), step(51)]
+1778686050975 Received input for time point: datetime> 2026-05-13T17:23:40 ms> 1778693020000
+1778686051256	DLV2	0	2026-05-13T17:23:40	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,018628
+1778686051465	0	1778693020	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004312
+1778686051469	0	1778693020	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003504
+1778686051473	0	1778693020	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003653
+1778686051476	0	1778693020	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003197
+1778686051480	0	1778693020	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003291
+1778686051484	0	1778693020	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004181
+1778686051487	0	1778693020	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003259
+1778686051491	0	1778693020	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003394
+1778686051495	0	1778693020	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003805
+1778686051631	DLV2	0	1778693020	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,135328
+ANSWER> 1778686051864 Produced output for time point: (datetime) 2026-05-13T17:23:40 (ms) 1778693020000
+2026-05-13T17:23:40	[activate_planning, multi(2), num_frogs(63), num_plants(62), positionPlayer(30,9), step(52)]
+1778686055977 Received input for time point: datetime> 2026-05-13T17:23:41 ms> 1778693021000
+1778686056265	DLV2	1	2026-05-13T17:23:41	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,019606
+1778686056475	0	1778693021	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004858
+1778686056480	0	1778693021	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004252
+1778686056483	0	1778693021	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003584
+1778686056487	0	1778693021	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003553
+1778686056491	0	1778693021	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003895
+1778686056496	0	1778693021	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004768
+1778686056500	0	1778693021	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003736
+1778686056504	0	1778693021	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003902
+1778686056508	0	1778693021	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003815
+1778686056637	DLV2	0	1778693021	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,127620
+ANSWER> 1778686056943 Produced output for time point: (datetime) 2026-05-13T17:23:41 (ms) 1778693021000
+2026-05-13T17:23:41	[activate_planning, multi(2), num_frogs(63), num_plants(62), positionPlayer(31,9), step(53)]
+1778686060970 Received input for time point: datetime> 2026-05-13T17:23:42 ms> 1778693022000
+1778686061059	DLV2	0	2026-05-13T17:23:42	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,007441
+1778686061274	0	1778693022	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004106
+1778686061278	0	1778693022	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004205
+1778686061282	0	1778693022	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003893
+1778686061286	0	1778693022	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003897
+1778686061290	0	1778693022	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003566
+1778686061295	0	1778693022	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004430
+1778686061298	0	1778693022	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003617
+1778686061302	0	1778693022	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003725
+1778686061306	0	1778693022	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003583
+1778686061423	DLV2	0	1778693022	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,116373
+ANSWER> 1778686061651 Produced output for time point: (datetime) 2026-05-13T17:23:42 (ms) 1778693022000
+2026-05-13T17:23:42	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,8), step(54)]
+1778686065976 Received input for time point: datetime> 2026-05-13T17:23:43 ms> 1778693023000
+1778686066185	DLV2	1	2026-05-13T17:23:43	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,022773
+1778686066373	0	1778693023	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003450
+1778686066376	0	1778693023	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003501
+1778686066380	0	1778693023	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003559
+1778686066384	0	1778693023	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003510
+1778686066388	0	1778693023	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003607
+1778686066392	0	1778693023	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004307
+1778686066396	0	1778693023	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003465
+1778686066400	0	1778693023	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003695
+1778686066404	0	1778693023	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003739
+1778686066517	DLV2	0	1778693023	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,112504
+ANSWER> 1778686066757 Produced output for time point: (datetime) 2026-05-13T17:23:43 (ms) 1778693023000
+2026-05-13T17:23:43	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,7), step(55)]
+1778686070974 Received input for time point: datetime> 2026-05-13T17:23:44 ms> 1778693024000
+1778686071183	DLV2	0	2026-05-13T17:23:44	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,012371
+1778686071393	0	1778693024	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004373
+1778686071396	0	1778693024	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003682
+1778686071400	0	1778693024	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003422
+1778686071404	0	1778693024	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003427
+1778686071407	0	1778693024	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003621
+1778686071412	0	1778693024	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004637
+1778686071416	0	1778693024	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003616
+1778686071420	0	1778693024	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003768
+1778686071424	0	1778693024	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003814
+1778686071530	DLV2	0	1778693024	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,104930
+ANSWER> 1778686071765 Produced output for time point: (datetime) 2026-05-13T17:23:44 (ms) 1778693024000
+2026-05-13T17:23:44	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,6), step(56)]
+1778686075976 Received input for time point: datetime> 2026-05-13T17:23:45 ms> 1778693025000
+1778686076187	DLV2	1	2026-05-13T17:23:45	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,012337
+1778686076404	0	1778693025	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004337
+1778686076408	0	1778693025	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003698
+1778686076412	0	1778693025	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003558
+1778686076415	0	1778693025	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003585
+1778686076419	0	1778693025	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003731
+1778686076425	0	1778693025	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005199
+1778686076430	0	1778693025	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,005196
+1778686076436	0	1778693025	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,005234
+1778686076441	0	1778693025	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004932
+1778686076547	DLV2	0	1778693025	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,105637
+ANSWER> 1778686076772 Produced output for time point: (datetime) 2026-05-13T17:23:45 (ms) 1778693025000
+2026-05-13T17:23:45	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,5), step(57)]
+1778686080976 Received input for time point: datetime> 2026-05-13T17:23:46 ms> 1778693026000
+1778686081189	DLV2	0	2026-05-13T17:23:46	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,008499
+1778686081406	0	1778693026	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,005403
+1778686081411	0	1778693026	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004412
+1778686081415	0	1778693026	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003985
+1778686081419	0	1778693026	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004093
+1778686081423	0	1778693026	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003951
+1778686081428	0	1778693026	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005022
+1778686081432	0	1778693026	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003931
+1778686081437	0	1778693026	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004065
+1778686081441	0	1778693026	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004096
+1778686081547	DLV2	0	1778693026	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,105134
+ANSWER> 1778686081779 Produced output for time point: (datetime) 2026-05-13T17:23:46 (ms) 1778693026000
+2026-05-13T17:23:46	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(31,4), step(58)]
+1778686085967 Received input for time point: datetime> 2026-05-13T17:23:47 ms> 1778693027000
+1778686086209	DLV2	1	2026-05-13T17:23:47	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,020329
+1778686086419	0	1778693027	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,006352
+1778686086427	0	1778693027	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,006834
+1778686086434	0	1778693027	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,006620
+1778686086439	0	1778693027	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004722
+1778686086443	0	1778693027	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,004478
+1778686086448	0	1778693027	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004807
+1778686086452	0	1778693027	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003680
+1778686086456	0	1778693027	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003852
+1778686086460	0	1778693027	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003788
+1778686086565	DLV2	0	1778693027	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,104243
+ANSWER> 1778686086786 Produced output for time point: (datetime) 2026-05-13T17:23:47 (ms) 1778693027000
+2026-05-13T17:23:47	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(30,4), step(59)]
+1778686090976 Received input for time point: datetime> 2026-05-13T17:23:48 ms> 1778693028000
+1778686091199	DLV2	0	2026-05-13T17:23:48	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,005662
+1778686091424	0	1778693028	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,006309
+1778686091429	0	1778693028	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004790
+1778686091433	0	1778693028	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,004072
+1778686091437	0	1778693028	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003688
+1778686091441	0	1778693028	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003858
+1778686091446	0	1778693028	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004950
+1778686091450	0	1778693028	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003769
+1778686091455	0	1778693028	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004008
+1778686091459	0	1778693028	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003933
+1778686091522	DLV2	0	1778693028	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,062970
+ANSWER> 1778686091793 Produced output for time point: (datetime) 2026-05-13T17:23:48 (ms) 1778693028000
+2026-05-13T17:23:48	[multi(2), num_frogs(63), num_plants(62), positionPlayer(31,4), step(60)]
+1778686095976 Received input for time point: datetime> 2026-05-13T17:23:49 ms> 1778693029000
+1778686096110	DLV2	1	2026-05-13T17:23:49	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,008198
+1778686096316	0	1778693029	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003366
+1778686096319	0	1778693029	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003268
+1778686096323	0	1778693029	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003217
+1778686096326	0	1778693029	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003328
+1778686096330	0	1778693029	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003394
+1778686096334	0	1778693029	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004492
+1778686096338	0	1778693029	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003508
+1778686096342	0	1778693029	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003749
+1778686096346	0	1778693029	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003781
+1778686096404	DLV2	0	1778693029	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,057393
+ANSWER> 1778686096701 Produced output for time point: (datetime) 2026-05-13T17:23:49 (ms) 1778693029000
+2026-05-13T17:23:49	[multi(2), num_frogs(63), num_plants(62), positionPlayer(31,5), step(61)]
+1778686100972 Received input for time point: datetime> 2026-05-13T17:23:50 ms> 1778693030000
+1778686101118	DLV2	0	2026-05-13T17:23:50	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,009752
+1778686101327	0	1778693030	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,005363
+1778686101331	0	1778693030	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,004403
+1778686101336	0	1778693030	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,004270
+1778686101340	0	1778693030	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003657
+1778686101343	0	1778693030	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003696
+1778686101349	0	1778693030	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005272
+1778686101353	0	1778693030	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003736
+1778686101357	0	1778693030	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003901
+1778686101361	0	1778693030	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003999
+1778686101464	DLV2	0	1778693030	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,102111
+ANSWER> 1778686101708 Produced output for time point: (datetime) 2026-05-13T17:23:50 (ms) 1778693030000
+2026-05-13T17:23:50	[activate_planning, num_frogs(63), num_plants(62), positionPlayer(32,5), step(62)]
+1778686105974 Received input for time point: datetime> 2026-05-13T17:23:51 ms> 1778693031000
+1778686106142	DLV2	1	2026-05-13T17:23:51	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,025065
+1778686106337	0	1778693031	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,004109
+1778686106341	0	1778693031	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003731
+1778686106345	0	1778693031	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003867
+1778686106349	0	1778693031	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004130
+1778686106354	0	1778693031	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003913
+1778686106359	0	1778693031	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,005008
+1778686106363	0	1778693031	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003944
+1778686106367	0	1778693031	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,004015
+1778686106371	0	1778693031	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,004270
+1778686106493	DLV2	0	1778693031	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,121252
+ANSWER> 1778686106792 Produced output for time point: (datetime) 2026-05-13T17:23:51 (ms) 1778693031000
+2026-05-13T17:23:51	[activate_planning, multi(3), num_frogs(63), num_plants(62), positionPlayer(31,5), step(63)]
+1778686110975 Received input for time point: datetime> 2026-05-13T17:23:52 ms> 1778693032000
+1778686111128	DLV2	0	2026-05-13T17:23:52	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,006236
+1778686111334	0	1778693032	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003026
+1778686111337	0	1778693032	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003062
+1778686111341	0	1778693032	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003116
+1778686111344	0	1778693032	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003253
+1778686111348	0	1778693032	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003414
+1778686111352	0	1778693032	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004156
+1778686111356	0	1778693032	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003698
+1778686111360	0	1778693032	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003591
+1778686111363	0	1778693032	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003590
+1778686111423	DLV2	0	1778693032	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,059168
+ANSWER> 1778686111699 Produced output for time point: (datetime) 2026-05-13T17:23:52 (ms) 1778693032000
+2026-05-13T17:23:52	[multi(3), num_frogs(63), num_plants(62), positionPlayer(31,4), step(64)]
+1778686115972 Received input for time point: datetime> 2026-05-13T17:23:53 ms> 1778693033000
+1778686116143	DLV2	1	2026-05-13T17:23:53	[plan_step/1, new_horizon_new/1, last_step/1, prow/2, pcol/2, my_horizon/1, frow_now/2, fcol_now/2, action_radius/1]	Reasoning	Done	0,012099
+1778686116351	0	1778693033	[not plantKilled(C,R) in { 1 }]	Streaming Atom Evaluation	Done	0,003626
+1778686116354	0	1778693033	[frogKilled(F) in [1 sec]]	Streaming Atom Evaluation	Done	0,003230
+1778686116358	0	1778693033	[not frogKilled(F) in { 1 }]	Streaming Atom Evaluation	Done	0,003273
+1778686116361	0	1778693033	[p(R,C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003378
+1778686116365	0	1778693033	[p(_,_,T) in { 1 }]	Streaming Atom Evaluation	Done	0,003540
+1778686116369	0	1778693033	[positionPlayer(C,R) count M in [20 sec]]	Streaming Atom Evaluation	Done	0,004423
+1778686116373	0	1778693033	[plantKilled(C,R) in [1 sec]]	Streaming Atom Evaluation	Done	0,003597
+1778686116377	0	1778693033	[reached in { 1 }]	Streaming Atom Evaluation	Done	0,003765
+1778686116381	0	1778693033	[pcol(C,T) in [1 sec]]	Streaming Atom Evaluation	Done	0,003759
+1778686116442	DLV2	0	1778693033	[c##14, sat/0, not_all_ok/1, ok/1, ok/2, c##13, w##15, penalty_frog/3, good/2, bad/2, risk_collide/2, fpos/4, w##18, penalty_action/2, action/4, w##16, penalty_plant/4, bad_plant/3, plantKilled/2, on_plant/2, w##17, action_taken/4, is_multi/0, multi/1, positionPlayer/2, c##5, c##3, c##1, c##4, c##0, c##2, frog_step/1, c##12, c##11, c##10, c##9, c##8, c##7, c##6, on_frog/1, e/1, active_frog/1, frogKilled/1, has_future_moves/0, n/1, s/1, p/3, reached/0, diff_col_abs/2, w/1, activate_planning/0, diff_row_abs/2]	Reasoning	Done	0,060686
+ANSWER> 1778686116706 Produced output for time point: (datetime) 2026-05-13T17:23:53 (ms) 1778693033000
+2026-05-13T17:23:53	[num_frogs(63), num_plants(62), positionPlayer(31,3), reached, step(65)]

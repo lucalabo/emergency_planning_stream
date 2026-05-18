@@ -13,15 +13,15 @@ from analyze_dpsr_log import parse_dpsr_log
 DPSR_DIR = "../DPSR"
 SIM_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_RESULTS_DIR = os.path.join(SIM_DIR, "log_results")
-INSTANCE_PATH = "instances/big-nd-200-001.lp"
+INSTANCE_PATH = "instances/small-nd-50-001.lp"
 
 # Benchmark parameters
-GRID_SIZE = 200
+GRID_SIZE = 50
 # Explicit (radius, horizon) combinations to benchmark
 COMBINATIONS = [
-    (3, 4),   # radius=3, horizon=4
+    (3, 4), # radius=3, horizon=4
+    (5, 4), 
     (5, 6),   # radius=5, horizon=6
-    (5, 8),   # radius=5, horizon=8
 ]
 REPETITIONS = 10
 MAX_STEPS = 400
@@ -59,6 +59,35 @@ def run_single_benchmark(radius, horizon, run_id):
     ]
     
     log_file = open(log_path, "w")
+
+
+    # Global shared state for the monitoring thread
+    monitor_state = {"step_count": 0, "stop_flag": False}
+
+
+    # 2. Start initialization delay
+    # {INITIALIZATION_DELAY}s for initialization...")
+    #time.sleep(INITIALIZATION_DELAY)
+
+    # 3. Start Generator
+    gen_cmd = [
+        "python3", "stream_gardener.py",
+        INSTANCE_PATH,
+        "--horizon", str(horizon),
+        "--radius", str(radius),
+        "--size", str(GRID_SIZE),
+        "--tick_rate", str(TICK_RATE)
+    ]
+    print(f"[*] Starting Generator: {' '.join(gen_cmd)}")
+    proc_gen = subprocess.Popen(
+        gen_cmd,
+        cwd=SIM_DIR,
+        preexec_fn=os.setsid
+    )
+
+    print(f"[*] Starting DPSR: {' '.join(gen_cmd)}, waiting 5sec..")
+    time.sleep(5)
+
     proc_dpsr = subprocess.Popen(
         dpsr_cmd,
         cwd=DPSR_DIR,
@@ -68,10 +97,6 @@ def run_single_benchmark(radius, horizon, run_id):
         bufsize=1,
         preexec_fn=os.setsid
     )
-
-    # Global shared state for the monitoring thread
-    monitor_state = {"step_count": 0, "stop_flag": False}
-
     def monitor_and_tee():
         try:
             for line in iter(proc_dpsr.stdout.readline, ''):
@@ -96,25 +121,6 @@ def run_single_benchmark(radius, horizon, run_id):
     monitor_thread = threading.Thread(target=monitor_and_tee, daemon=True)
     monitor_thread.start()
 
-    # 2. Start initialization delay
-    print(f"[*] Waiting {INITIALIZATION_DELAY}s for initialization...")
-    time.sleep(INITIALIZATION_DELAY)
-
-    # 3. Start Generator
-    gen_cmd = [
-        "python3", "stream_gardener.py",
-        INSTANCE_PATH,
-        "--horizon", str(horizon),
-        "--radius", str(radius),
-        "--size", str(GRID_SIZE),
-        "--tick_rate", str(TICK_RATE)
-    ]
-    print(f"[*] Starting Generator: {' '.join(gen_cmd)}")
-    proc_gen = subprocess.Popen(
-        gen_cmd,
-        cwd=SIM_DIR,
-        preexec_fn=os.setsid
-    )
 
     # 4. Monitor steps
     try:

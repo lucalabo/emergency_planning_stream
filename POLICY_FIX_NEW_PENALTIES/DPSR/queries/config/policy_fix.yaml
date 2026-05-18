@@ -74,49 +74,7 @@ sources:
                   - key: "R"
                     type: "string"
                   - key: "H"
-                    type: "string"  
-              - key: "wall"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string"                                   
-              - key: "plant"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string" 
-              - key: "mud"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string"  
-              - key: "water"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string"  
-              - key: "oil"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string"  
-              - key: "fire"
-                type: "list"
-                item_schema:
-                  - key: "C"
-                    type: "string"
-                  - key: "R"
-                    type: "string"                    
+                    type: "string"                   
             event_time:
               field: "timestamp"
               format: "datetime"
@@ -194,24 +152,6 @@ sources:
                         asp_type: "integer"  
                       - field: "H"
                         asp_type: "integer"   
-              - name: "wall"
-                terms:                
-                  - field: "wall"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"    
-              - name: "plant"
-                terms:                
-                  - field: "plant"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"  
               - name: "start_position_player"
                 terms:                
                   - field: "start_position_player"
@@ -222,40 +162,4 @@ sources:
                       - field: "R"
                         asp_type: "integer"
                       - field: "T"
-                        asp_type: "integer"
-              - name: "mud"
-                terms:                
-                  - field: "mud"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"  
-              - name: "water"
-                terms:                
-                  - field: "water"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"  
-              - name: "oil"
-                terms:                
-                  - field: "oil"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"  
-              - name: "fire"
-                terms:                
-                  - field: "fire"
-                    index: -1
-                    fields:
-                      - field: "C"
-                        asp_type: "integer"  
-                      - field: "R"
-                        asp_type: "integer"                                      
+                        asp_type: "integer"                               

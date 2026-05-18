@@ -53,7 +53,7 @@ def generate_nearby_actions(player_col, player_row, radius):
         Esempio: list1, list2, list3, ... = generate_nearby_actions(...)
         dove list1 = [azione, rank, col, row]
     """
-    json_filename="big-nd-150-001.json"
+    json_filename="small-nd-100-001.json"
     policy_data = load_policy(json_filename)
         
     actions_lists = []  # Lista temporanea per raccogliere tutte le liste
@@ -105,7 +105,7 @@ def generate_water_actions(player_col, player_row, radius):
     Genera i fatti 'water_action' per tutte le celle nel raggio specificato attorno al giocatore.
     Usa policy specifica per l'acqua (current_water_policy.json).
     """
-    json_filename = "big-nd-150-001.water.json"
+    json_filename = "small-nd-100-001.water.json"
     
     # Check if policy exists
     script_dir = os.path.dirname(os.path.abspath(__file__))
